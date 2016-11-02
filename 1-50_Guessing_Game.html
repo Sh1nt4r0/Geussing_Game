@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Guess a Number</title>
+		<script src="Guess.js"></script>
+		<link rel=stylesheet type="text/css" href="Guess.css">
+	<head>
+	
+	<body onload="generate()">
+		Choose A Number Between 1 - 50
+		<br>
+		<input type=text id="inputGuess" class=input>
+		<br>
+		<button onclick="checkGuess()">Guess</button>
+		<button onClick="restart()">Restart Game</button>
+		<br>
+		<p class=bet>How much money do you want to bet that you'll win?</p>
+		<p class=bet>Amount of cash:</p><div id="idAmount" class=Guesses>500</div>
+		<input type=text id="idMoney">
+		<br>
+		<fieldset class=Guesses>
+			Guesses Left: <div id="guessLeft">6</div>
+		</fieldset>
+		<br>
+		<fieldset class=Guesses>
+			Rounds Played: <div id="playRound">0</div>
+		</fieldset>
+		<br>
+		<fieldset class=Guesses>
+			Rounds Won: <div id="wonRound">0</div>
+		</fieldset>
+		<br>
+		<fieldset class=Guesses>
+			Rounds Lost: <div id="lostRound">0</div>
+		</fieldset>
+		<br>
+		<img  src="https://s-media-cache-ak0.pinimg.com/564x/59/47/a8/5947a85b43ef42db0443d17964e79484.jpg" 
+		width=200px onClick="cheat()">
+	</body>
+</html>	
